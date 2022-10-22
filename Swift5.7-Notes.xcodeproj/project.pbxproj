@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D9E274672903EA91003D6224 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E274662903EA91003D6224 /* main.swift */; };
+		D9E274742903EAAF003D6224 /* A Swift Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E274712903EAAE003D6224 /* A Swift Tour.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		D9E274632903EA90003D6224 /* Swift5.7-Notes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Swift5.7-Notes"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9E274662903EA91003D6224 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D9E2746F2903EAAE003D6224 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D9E274712903EAAE003D6224 /* A Swift Tour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "A Swift Tour.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +44,7 @@
 		D9E2745A2903EA90003D6224 = {
 			isa = PBXGroup;
 			children = (
+				D9E2746F2903EAAE003D6224 /* README.md */,
 				D9E274652903EA91003D6224 /* Swift5.7-Notes */,
 				D9E274642903EA90003D6224 /* Products */,
 			);
@@ -58,8 +62,33 @@
 			isa = PBXGroup;
 			children = (
 				D9E274662903EA91003D6224 /* main.swift */,
+				D9E274702903EAAE003D6224 /* 1. Welcome to Swift(欢迎使用Swift) */,
+				D9E274722903EAAE003D6224 /* 2. Language Guild(Swift教程) */,
+				D9E2746D2903EAAE003D6224 /* 3. Language Reference(语言参考) */,
 			);
 			path = "Swift5.7-Notes";
+			sourceTree = "<group>";
+		};
+		D9E2746D2903EAAE003D6224 /* 3. Language Reference(语言参考) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "3. Language Reference(语言参考)";
+			sourceTree = "<group>";
+		};
+		D9E274702903EAAE003D6224 /* 1. Welcome to Swift(欢迎使用Swift) */ = {
+			isa = PBXGroup;
+			children = (
+				D9E274712903EAAE003D6224 /* A Swift Tour.swift */,
+			);
+			path = "1. Welcome to Swift(欢迎使用Swift)";
+			sourceTree = "<group>";
+		};
+		D9E274722903EAAE003D6224 /* 2. Language Guild(Swift教程) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "2. Language Guild(Swift教程)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9E274672903EA91003D6224 /* main.swift in Sources */,
+				D9E274742903EAAF003D6224 /* A Swift Tour.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
