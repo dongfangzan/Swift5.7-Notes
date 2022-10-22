@@ -365,12 +365,12 @@ class TriangleAndSquare {
 // 对象和类
 func objectAndClass() {
     // 实例化
-    var shape = Shape()
+    let shape = Shape()
     shape.numberOfSides = 7
-    var shapeDescription = shape.simpleDescription()
+    let shapeDescription = shape.simpleDescription()
     print(shapeDescription)
     
-    var namedShape = NamedShape(name: "NamedShape")
+    let namedShape = NamedShape(name: "NamedShape")
     namedShape.numberOfSides = 5
     print(namedShape.simpleDescription())
     
@@ -378,12 +378,12 @@ func objectAndClass() {
     print("square area: \(square.area())")
     print(square.simpleDescription())
     
-    var triangle = EquilateralTriangle(sideLength: 3.1, name: "a triangle")
+    let triangle = EquilateralTriangle(sideLength: 3.1, name: "a triangle")
     print(triangle.perimeter)
     triangle.perimeter = 9.9
     print(triangle.sideLength)
     
-    var triangleAndSquare = TriangleAndSquare(size: 10, name: "another test shape")
+    let triangleAndSquare = TriangleAndSquare(size: 10, name: "another test shape")
     print(triangleAndSquare.square.sideLength)
     print(triangleAndSquare.triangle.sideLength)
     triangleAndSquare.square = Square(sideLength: 50, name: "larger square")
@@ -391,10 +391,97 @@ func objectAndClass() {
     
     // 同前面?的用法
     let optionalSquare: Square? = Square(sideLength: 2.5, name: "optional square")
-    let sideLength = optionalSquare?.sideLength
+    _ = optionalSquare?.sideLength
+}
+
+enum Rank: Int {
+    case ace = 1
+    case two, three, four, five, six, seven, eight, nine, ten
+    case jack, queen, king
+    func simpleDescription() -> String {
+        switch self {
+        case .ace:
+            return "ace"
+        case .jack:
+            return "jack"
+        case .queen:
+            return "queen"
+        case .king:
+            return "king"
+        default:
+            return String(self.rawValue)
+        }
+    }
+}
+
+enum Suit {
+    case spades, hearts, diamonds, clubs
+    func simpleDescritpion() -> String {
+        switch self {
+        case .spades:
+            return "spades"
+        case .hearts:
+            return "hearts"
+        case .diamonds:
+            return "diamonds"
+        case .clubs:
+            return "clubs"
+        }
+    }
+    
+    func color() -> String {
+        switch self {
+        // 类型已经是确定的了，所以不需要再写，只需直接.spades即可
+        case .spades:
+            return "black"
+        case .clubs:
+            return "black"
+        case .hearts:
+            return "red"
+        case .diamonds:
+            return "red"
+        }
+    }
+}
+
+enum ServerResponse {
+    case result(String, String)
+    case failure(String)
+}
+
+// 结构体，与类的最大区别在于，结构体传值，类传引用
+struct Card {
+    var rank: Rank
+    var suit: Suit
+    func simpleDescription() -> String {
+        return "The \(rank.simpleDescription()) of \(suit.simpleDescritpion())"
+    }
 }
 
 // 枚举和结构体
 func enumAndStruct() {
+    let ace = Rank.ace
+    let aceRawValue = ace.rawValue
+    print(aceRawValue)
     
+    if let convertedRank = Rank(rawValue: 3) {
+        print(convertedRank.simpleDescription())
+    }
+    
+    let hearts = Suit.hearts
+    print(hearts.simpleDescritpion())
+    print(hearts.color())
+    
+    let success = ServerResponse.result("6:00 am", "8:09 am")
+    let failure = ServerResponse.failure("Out of cheese.")
+    
+    switch success {
+    // 注意这里提取参数的方法
+    case let .result(sunrise, sunset):
+        print("Sunrise is at \(sunrise) and sunset is at \(sunset)")
+    case let .failure(message):
+        print("Failure... \(message)")
+    }
+    
+    let threeOfSpades = Card(rank: .three, suit: .spades)
 }
