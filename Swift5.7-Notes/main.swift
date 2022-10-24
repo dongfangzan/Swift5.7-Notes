@@ -7,6 +7,10 @@
 
 import Foundation
 
+// https://swiftgg.gitbook.io/swift/huan-ying-shi-yong-swift/03_a_swift_tour
 aSwiftTour()
 
-
+// Swift Guide/Swift教程
+// The basics/基础教程
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/01_the_basics
+theBasics()

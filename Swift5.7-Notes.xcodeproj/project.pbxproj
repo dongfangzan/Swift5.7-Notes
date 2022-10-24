@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D9E274672903EA91003D6224 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E274662903EA91003D6224 /* main.swift */; };
 		D9E274742903EAAF003D6224 /* A Swift Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E274712903EAAE003D6224 /* A Swift Tour.swift */; };
+		D9E274762906500D003D6224 /* TheBasics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E274752906500D003D6224 /* TheBasics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,7 @@
 		D9E274662903EA91003D6224 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D9E2746F2903EAAE003D6224 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D9E274712903EAAE003D6224 /* A Swift Tour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "A Swift Tour.swift"; sourceTree = "<group>"; };
+		D9E274752906500D003D6224 /* TheBasics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheBasics.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		D9E274722903EAAE003D6224 /* 2. Language Guild(Swift教程) */ = {
 			isa = PBXGroup;
 			children = (
+				D9E274752906500D003D6224 /* TheBasics.swift */,
 			);
 			path = "2. Language Guild(Swift教程)";
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9E274672903EA91003D6224 /* main.swift in Sources */,
+				D9E274762906500D003D6224 /* TheBasics.swift in Sources */,
 				D9E274742903EAAF003D6224 /* A Swift Tour.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
