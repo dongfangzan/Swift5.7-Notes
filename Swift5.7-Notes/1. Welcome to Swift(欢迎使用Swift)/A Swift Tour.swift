@@ -30,6 +30,14 @@ func aSwiftTour() {
     // ## Concurrency/并发性
     concurrency()
     
+    // ## protocol and extesion/协议和扩展
+    protocolAndExtension()
+    
+    // ## Error Handling/错误处理
+    errorHandling()
+    
+    // ## Generics/泛型
+    generics()
 }
 
 // 1. Hello World
@@ -517,7 +525,171 @@ func concurrency(){
     // 同步代码中调用异步函数且不等待返回结果，无输出
     Task {
         let result = await connectUser(to:"primary")
-        print(result)
+        print(result) // Hello Guest, user ID 97
     }
     
+}
+
+// 类似接口
+protocol ExampleProtocol {
+    var simpleDescription: String {get}
+    mutating func adjust()
+}
+
+class SimpleClass: ExampleProtocol {
+    // 无需增加mutating关键字
+    func adjust() {
+        simpleDescription += " Now 100% adjusted."
+    }
+    
+    var simpleDescription: String = "A very simple class"
+    var anthoerProperty: Int = 69105
+}
+
+struct SimpleStructure: ExampleProtocol {
+    var simpleDescription: String = "A simple structure"
+    // 在结构体中需要增加mutating关键字，用来标记会修改结构体，因为结构体是不可变的  Left side of mutating operator isn't mutable: 'self' is immutable
+    mutating func adjust() {
+        simpleDescription += " (adjusted)"
+    }
+}
+
+// 扩展，为现有的类型添加功能
+extension Int: ExampleProtocol {
+    var simpleDescription: String {
+        return "The number \(self)"
+    }
+    
+    mutating func adjust() {
+        self += 42
+    }
+    
+    
+}
+
+// 类、枚举和结构体都可以遵循协议
+func protocolAndExtension() {
+    let a = SimpleClass()
+    a.adjust()
+    print(a.simpleDescription)
+    
+    var b = SimpleStructure()
+    b.adjust()
+    print(b.simpleDescription)
+    
+    print(7.simpleDescription)
+    var c = 7
+    // 教材补充：你不能直接用7.adjust()，因为7是一个常量，不能对一个常量进行修改
+    c.adjust()
+    print(c)
+    
+    // 可以使用其他命名类型一样使用协议名
+    let protocolValue: ExampleProtocol = a
+    print(protocolValue.simpleDescription)
+}
+
+// 使用`Error`协议来表示错误
+enum PrinterError: Error {
+    case outOfPaper
+    case noToner
+    case onFire
+}
+
+// 使用throw来跑出错误，使用throws来表示一个可以抛出错误的函数（同Java）
+func send(job: Int, toPrinter printerName: String) throws -> String {
+    if printerName == "Never Has Toner" {
+        throw PrinterError.noToner
+    } else if printerName == "Fire in the hole" {
+        throw PrinterError.onFire
+    } else if printerName == "Out of Paper" {
+        throw PrinterError.outOfPaper
+    }
+    return "Job sent"
+}
+
+
+func errorHandling() {
+    //do-catch 处理，使用try标记可以跑出错误的代码
+    do {
+        let printerResponse = try send(job: 1040, toPrinter: "Bi Sheng")
+        print(printerResponse)  // Job sent
+    } catch {
+        print(error)
+    }
+    
+    // 可以写多个catch块，来处理不同的错误
+    do {
+        let printerResponse = try send(job: 1440, toPrinter: "Never Has Toner")
+        print(printerResponse)  // Job sent
+    } catch PrinterError.onFire {
+        print("I'll just put this over here, with the rest of the fire.")
+    } catch let printerError as PrinterError {
+        print("Printer error: \(printerError).") // Printer error: noToner.
+    } catch {
+        print(error)
+    }
+    
+    // 未抛出异常，返回正常数据
+    let printerSuccess = try? send(job: 1884, toPrinter: "Mergenthaler")
+    // 抛出了异常，返回nil
+    let printerFailure = try? send(job: 1885, toPrinter: "Never Has Toner")
+
+    print(printerSuccess as Any) //Optional("Job sent")
+    print(printerFailure as Any) //nil
+    
+    var fridgeIsOpen = false
+    let fridgeContent = ["milk", "eggs", "leftovers"]
+    
+    func fridgeContains(_ food: String) -> Bool {
+        fridgeIsOpen = true
+        defer {
+            fridgeIsOpen = false
+        }
+        let result = fridgeContent.contains(food)
+        return result
+    }
+
+    print(fridgeContains("banana")) // false
+    // 返回false
+    print(fridgeIsOpen) // false
+}
+
+func generics() {
+    // 基础泛型写法
+    func makeArray<Item>(repeating item: Item, numberOfTimes: Int) -> [Item] {
+        var result: [Item] = []
+        
+        for _ in 0..<numberOfTimes {
+            result.append(item)
+        }
+        return result
+    }
+    
+    print(makeArray(repeating: "knock", numberOfTimes: 4)) //["knock", "knock", "knock", "knock"]
+    
+    enum OptionalValue<Wrapped> {
+        case none
+        case some(Wrapped)
+    }
+    
+    var possibleInteger: OptionalValue<Int> = .none
+    print(possibleInteger)  // none
+    possibleInteger = .some(100)
+    print(possibleInteger)  //some(100)
+    
+    // 类型后面使用where来限制类型，限定Sequence的Element属性要相同(也就是类型要相同)
+    func anyCommonElements<T: Sequence, U: Sequence>(_ lhs: T, _ rhs: U) -> Bool where T.Element: Equatable, T.Element == U.Element {
+        for lhsItem in lhs {
+            for rhsItem in rhs {
+                if lhsItem == rhsItem {
+                    return true
+                }
+            }
+        }
+        return false
+    }
+    
+    // 编译失败，Type of expression is ambiguous without more context
+    // anyCommonElements([1,2,3], ["3"])
+    print(anyCommonElements([1,2,3], [3])) // true
 }
