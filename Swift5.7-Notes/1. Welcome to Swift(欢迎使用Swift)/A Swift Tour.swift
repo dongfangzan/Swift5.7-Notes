@@ -13,30 +13,39 @@ func aSwiftTour() {
     helloWolrd()
 
     // ## Simple Values/简单值
+    // https://swiftgg.gitbook.io/swift/huan-ying-shi-yong-swift/03_a_swift_tour#simple-values
     simpleValues()
 
     // ## Control Flow/控制流
+    // https://swiftgg.gitbook.io/swift/huan-ying-shi-yong-swift/03_a_swift_tour#control-flow
     controlFLow()
 
     // ## functions and closures/函数和闭包
+    // https://swiftgg.gitbook.io/swift/huan-ying-shi-yong-swift/03_a_swift_tour#functions-and-closures
     funcAndClosure()
 
     // ## object and class/对象和类
+    // https://swiftgg.gitbook.io/swift/huan-ying-shi-yong-swift/03_a_swift_tour#objects-and-classes
     objectAndClass()
 
     // ## Enumerations and Structures/枚举和结构体
+    // https://swiftgg.gitbook.io/swift/huan-ying-shi-yong-swift/03_a_swift_tour#enumerations-and-structure
     enumAndStruct()
 
     // ## Concurrency/并发性
+    // https://swiftgg.gitbook.io/swift/huan-ying-shi-yong-swift/03_a_swift_tour#concurrency
     concurrency()
     
     // ## protocol and extesion/协议和扩展
+    // https://swiftgg.gitbook.io/swift/huan-ying-shi-yong-swift/03_a_swift_tour#protocols-and-extensions
     protocolAndExtension()
     
     // ## Error Handling/错误处理
+    // https://swiftgg.gitbook.io/swift/huan-ying-shi-yong-swift/03_a_swift_tour#error-handling
     errorHandling()
     
     // ## Generics/泛型
+    // https://swiftgg.gitbook.io/swift/huan-ying-shi-yong-swift/03_a_swift_tour#generics
     generics()
 }
 
