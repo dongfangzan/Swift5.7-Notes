@@ -7,8 +7,8 @@
 
 import Foundation
 
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/03_strings_and_characters
 func stringsAndCharacters() {
-    
     
     // 单行字符串
     let someString = "Some string literal value"

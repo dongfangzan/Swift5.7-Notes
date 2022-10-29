@@ -7,6 +7,7 @@
 
 代码文件的组织方式按照官方教材的章节标题进行排列（包括[官方英文](https://docs.swift.org/swift-book/)，以及网友翻译的[中文教材](https://swiftgg.gitbook.io/swift/)）
 
+> PS: 你可以在代码注释中的链接地址找到对应的文档，也可以看着文档寻找对应的代码
 
 - [X] [A Swift Tour/Swift 初见](https://github.com/dongfangzan/Swift5.7-Notes/blob/main/Swift5.7-Notes/1.%20Welcome%20to%20Swift(%E6%AC%A2%E8%BF%8E%E4%BD%BF%E7%94%A8Swift)/A%20Swift%20Tour.swift)
 - [X] [Language Guide/Swift教程](https://github.com/dongfangzan/Swift5.7-Notes/tree/main/Swift5.7-Notes/2.%20Language%20Guild(Swift%E6%95%99%E7%A8%8B))
