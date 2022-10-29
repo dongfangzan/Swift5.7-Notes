@@ -14,3 +14,9 @@ aSwiftTour()
 // The basics/基础教程
 // https://swiftgg.gitbook.io/swift/swift-jiao-cheng/01_the_basics
 theBasics()
+
+// Basic Operators
+basicOperators()
+
+// Strings and Characters
+stringsAndCharacters()

@@ -50,12 +50,12 @@ func aSwiftTour() {
 }
 
 // 1. Hello World
-func helloWolrd() {
+private func helloWolrd() {
     print("Hello, world!")
 }
 
 // 2. 简单值
-func simpleValues() {
+private func simpleValues() {
     // 声明变量
     var myVariable = 42
     myVariable = 50
@@ -116,7 +116,7 @@ func simpleValues() {
 }
 
 // Control Flow
-func controlFLow() {
+private func controlFLow() {
     let individualScores = [75, 43, 103, 87, 12]
     var teamScore = 0
     for score in individualScores {
@@ -209,16 +209,16 @@ func controlFLow() {
     print("total(0..<4): \(total)")
 }
 
-func greeting(person: String, day: String) -> String {
+private func greeting(person: String, day: String) -> String {
     return "Hello \(person), today is \(day)."
 }
 
-func greet(_ person: String, day: String) -> String {
+private func greet(_ person: String, day: String) -> String {
     return "Hello \(person), today is \(day). No argument person."
 }
 
 // 返回一个闭包
-func calculateStatistics(scores:[Int]) -> (min: Int, max: Int, sum: Int) {
+private func calculateStatistics(scores:[Int]) -> (min: Int, max: Int, sum: Int) {
     var min = scores[0]
     var max = scores[0]
     var sum = 0
@@ -236,7 +236,7 @@ func calculateStatistics(scores:[Int]) -> (min: Int, max: Int, sum: Int) {
 }
 
 // 嵌套函数
-func returnFifteen() -> Int{
+private func returnFifteen() -> Int{
     var y = 10
     func add() {
         y += 5
@@ -246,7 +246,7 @@ func returnFifteen() -> Int{
 }
 
 // 函数式编程，可以把函数作为返回值，返回值为一个函数（入参为Int类型，出参为Int类型）
-func makeIncrement() -> ((Int) -> Int) {
+private func makeIncrement() -> ((Int) -> Int) {
     func addOne(number: Int) -> Int {
         return 1+number
     }
@@ -254,7 +254,7 @@ func makeIncrement() -> ((Int) -> Int) {
 }
 
 // 函数作为参数，condtion参数接收一个函数（入参为Int，出参为Bool）
-func hasAnyMatches(list: [Int], condition: (Int) -> Bool) -> Bool {
+private func hasAnyMatches(list: [Int], condition: (Int) -> Bool) -> Bool {
     for item in list {
         if condition(item) {
             return true
@@ -263,12 +263,12 @@ func hasAnyMatches(list: [Int], condition: (Int) -> Bool) -> Bool {
     return false
 }
 
-func lessThanTen(number: Int) -> Bool {
+private func lessThanTen(number: Int) -> Bool {
     return number < 10
 }
 
 // functions and closures
-func funcAndClosure() {
+private func funcAndClosure() {
     // 参数名不能省略
     print(greeting(person: "Bob", day: "Tuesday"))
     print(greet("Bob", day: "Tuesday"))
@@ -297,14 +297,14 @@ func funcAndClosure() {
     print(sortedNumbers)
 }
 
-class Shape {
+private class Shape {
     var numberOfSides = 0
     func simpleDescription() -> String {
         return "A shape with \(numberOfSides) sides."
     }
 }
 
-class NamedShape {
+private class NamedShape {
     var numberOfSides: Int = 0
     var name: String
 
@@ -317,7 +317,7 @@ class NamedShape {
     }
 }
 
-class Square: NamedShape {
+private class Square: NamedShape {
     var sideLength: Double
     
     init(sideLength: Double, name: String) {
@@ -335,7 +335,7 @@ class Square: NamedShape {
     }
 }
 
-class EquilateralTriangle: NamedShape {
+private class EquilateralTriangle: NamedShape {
     var sideLength: Double = 0.0
     
     init(sideLength: Double, name: String) {
@@ -364,7 +364,7 @@ class EquilateralTriangle: NamedShape {
 
 // WillSet和didSet的用法
 // willSet在设置一个新值之前调用代码，didSet在设置一个新值之后调用代码
-class TriangleAndSquare {
+private class TriangleAndSquare {
     var triangle: EquilateralTriangle {
         willSet {
             square.sideLength = newValue.sideLength
@@ -384,7 +384,7 @@ class TriangleAndSquare {
 }
 
 // 对象和类
-func objectAndClass() {
+private func objectAndClass() {
     // 实例化
     let shape = Shape()
     shape.numberOfSides = 7
@@ -415,7 +415,7 @@ func objectAndClass() {
     _ = optionalSquare?.sideLength
 }
 
-enum Rank: Int {
+private enum Rank: Int {
     case ace = 1
     case two, three, four, five, six, seven, eight, nine, ten
     case jack, queen, king
@@ -435,7 +435,7 @@ enum Rank: Int {
     }
 }
 
-enum Suit {
+private enum Suit {
     case spades, hearts, diamonds, clubs
     func simpleDescritpion() -> String {
         switch self {
@@ -465,13 +465,13 @@ enum Suit {
     }
 }
 
-enum ServerResponse {
+private enum ServerResponse {
     case result(String, String)
     case failure(String)
 }
 
 // 结构体，与类的最大区别在于，结构体传值，类传引用
-struct Card {
+private struct Card {
     var rank: Rank
     var suit: Suit
     func simpleDescription() -> String {
@@ -480,7 +480,7 @@ struct Card {
 }
 
 // 枚举和结构体
-func enumAndStruct() {
+private func enumAndStruct() {
     let ace = Rank.ace
     let aceRawValue = ace.rawValue
     print(aceRawValue)
@@ -507,14 +507,14 @@ func enumAndStruct() {
     let threeOfSpades = Card(rank: .three, suit: .spades)
 }
 
-func fetchUserID(from server: String) async -> Int {
+private func fetchUserID(from server: String) async -> Int {
     if server == "primary" {
         return 97
     }
     return 501
 }
 
-func fetchUsername(from server: String) async -> String {
+private func fetchUsername(from server: String) async -> String {
     let userID = await fetchUserID(from: server)
     if userID == 501 {
         return "John Appleseed"
@@ -522,7 +522,7 @@ func fetchUsername(from server: String) async -> String {
     return "Guest"
 }
 
-func connectUser(to server: String) async -> String {
+private func connectUser(to server: String) async -> String {
     async let userID = fetchUserID(from: server)
     async let username = fetchUsername(from: server)
     let greeting = await "Hello \(username), user ID \(userID)"
@@ -530,7 +530,7 @@ func connectUser(to server: String) async -> String {
     return greeting
 }
 
-func concurrency(){
+private func concurrency(){
     // 同步代码中调用异步函数且不等待返回结果，无输出
     Task {
         let result = await connectUser(to:"primary")
@@ -540,12 +540,12 @@ func concurrency(){
 }
 
 // 类似接口
-protocol ExampleProtocol {
+private protocol ExampleProtocol {
     var simpleDescription: String {get}
     mutating func adjust()
 }
 
-class SimpleClass: ExampleProtocol {
+private class SimpleClass: ExampleProtocol {
     // 无需增加mutating关键字
     func adjust() {
         simpleDescription += " Now 100% adjusted."
@@ -555,7 +555,7 @@ class SimpleClass: ExampleProtocol {
     var anthoerProperty: Int = 69105
 }
 
-struct SimpleStructure: ExampleProtocol {
+private struct SimpleStructure: ExampleProtocol {
     var simpleDescription: String = "A simple structure"
     // 在结构体中需要增加mutating关键字，用来标记会修改结构体，因为结构体是不可变的  Left side of mutating operator isn't mutable: 'self' is immutable
     mutating func adjust() {
@@ -577,7 +577,7 @@ extension Int: ExampleProtocol {
 }
 
 // 类、枚举和结构体都可以遵循协议
-func protocolAndExtension() {
+private func protocolAndExtension() {
     let a = SimpleClass()
     a.adjust()
     print(a.simpleDescription)
@@ -598,14 +598,14 @@ func protocolAndExtension() {
 }
 
 // 使用`Error`协议来表示错误
-enum PrinterError: Error {
+private enum PrinterError: Error {
     case outOfPaper
     case noToner
     case onFire
 }
 
 // 使用throw来跑出错误，使用throws来表示一个可以抛出错误的函数（同Java）
-func send(job: Int, toPrinter printerName: String) throws -> String {
+private func send(job: Int, toPrinter printerName: String) throws -> String {
     if printerName == "Never Has Toner" {
         throw PrinterError.noToner
     } else if printerName == "Fire in the hole" {
@@ -617,7 +617,7 @@ func send(job: Int, toPrinter printerName: String) throws -> String {
 }
 
 
-func errorHandling() {
+private func errorHandling() {
     //do-catch 处理，使用try标记可以跑出错误的代码
     do {
         let printerResponse = try send(job: 1040, toPrinter: "Bi Sheng")
@@ -663,7 +663,7 @@ func errorHandling() {
     print(fridgeIsOpen) // false
 }
 
-func generics() {
+private func generics() {
     // 基础泛型写法
     func makeArray<Item>(repeating item: Item, numberOfTimes: Int) -> [Item] {
         var result: [Item] = []

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D9A9FB5E290BDEEB0040A666 /* BasicOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A9FB5D290BDEEB0040A666 /* BasicOperators.swift */; };
+		D9A9FB60290BE8400040A666 /* StringsAndCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A9FB5F290BE8400040A666 /* StringsAndCharacters.swift */; };
 		D9E274672903EA91003D6224 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E274662903EA91003D6224 /* main.swift */; };
 		D9E274742903EAAF003D6224 /* A Swift Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E274712903EAAE003D6224 /* A Swift Tour.swift */; };
 		D9E274762906500D003D6224 /* TheBasics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E274752906500D003D6224 /* TheBasics.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D9A9FB5D290BDEEB0040A666 /* BasicOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicOperators.swift; sourceTree = "<group>"; };
+		D9A9FB5F290BE8400040A666 /* StringsAndCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsAndCharacters.swift; sourceTree = "<group>"; };
 		D9E274632903EA90003D6224 /* Swift5.7-Notes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Swift5.7-Notes"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9E274662903EA91003D6224 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D9E2746F2903EAAE003D6224 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				D9E274752906500D003D6224 /* TheBasics.swift */,
+				D9A9FB5D290BDEEB0040A666 /* BasicOperators.swift */,
+				D9A9FB5F290BE8400040A666 /* StringsAndCharacters.swift */,
 			);
 			path = "2. Language Guild(Swift教程)";
 			sourceTree = "<group>";
@@ -152,8 +158,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9A9FB5E290BDEEB0040A666 /* BasicOperators.swift in Sources */,
 				D9E274672903EA91003D6224 /* main.swift in Sources */,
 				D9E274762906500D003D6224 /* TheBasics.swift in Sources */,
+				D9A9FB60290BE8400040A666 /* StringsAndCharacters.swift in Sources */,
 				D9E274742903EAAF003D6224 /* A Swift Tour.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
