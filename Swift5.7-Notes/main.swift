@@ -15,8 +15,14 @@ aSwiftTour()
 // https://swiftgg.gitbook.io/swift/swift-jiao-cheng/01_the_basics
 theBasics()
 
-// Basic Operators
+// Basic Operators/基本运算符
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/02_basic_operators
 basicOperators()
 
-// Strings and Characters
+// Strings and Characters/字符串和字符
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/03_strings_and_characters
 stringsAndCharacters()
+
+// CollectionTypes/集合类型
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/04_collection_types
+collectionTypes()
