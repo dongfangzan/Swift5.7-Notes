@@ -14,7 +14,7 @@
   - [X] [The Basics/基础部分](https://github.com/dongfangzan/Swift5.7-Notes/blob/main/Swift5.7-Notes/2.%20Language%20Guild(Swift%E6%95%99%E7%A8%8B)/TheBasics.swift)
   - [X] [Basic Operators/基本运算符](https://github.com/dongfangzan/Swift5.7-Notes/blob/main/Swift5.7-Notes/2.%20Language%20Guild(Swift%E6%95%99%E7%A8%8B)/BasicOperators.swift)
   - [X] [Strings and Characters/字符串和字符](https://github.com/dongfangzan/Swift5.7-Notes/blob/main/Swift5.7-Notes/2.%20Language%20Guild(Swift%E6%95%99%E7%A8%8B)/StringsAndCharacters.swift)
-  - [ ] [Collection Types/集合类型]()
+  - [X] [Collection Types/集合类型](https://github.com/dongfangzan/Swift5.7-Notes/blob/main/Swift5.7-Notes/2.%20Language%20Guild(Swift%E6%95%99%E7%A8%8B)/CollectionTypes.swift)
   - [ ] [Control Flow/控制流]()
   - [ ] [Functions/函数]()
   - [ ] [Closures/闭包]()
