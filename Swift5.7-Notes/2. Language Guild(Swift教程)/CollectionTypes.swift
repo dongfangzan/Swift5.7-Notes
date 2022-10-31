@@ -104,6 +104,124 @@ func collectionTypes() {
     func sets() {
         var letters = Set<Character>()
         print("letters is of type Set<Character> with \(letters.count) items.") // letters is of type Set<Character> with 0 items.
+        
+        letters.insert("a")
+        print(letters) // ["a"]
+        letters = []
+        print(letters) // 还是Set类型
+        
+        var favoriteGenres: Set<String> = ["Rock", "Classical", "Hip hop"]
+//        var favoriteGenres: Set = ["Rock", "Classical", "Hip hop"]  简化版本
+        print(favoriteGenres) // ["Rock", "Classical", "Hip hop"]
+        
+        print("I have \(favoriteGenres.count) favorite music genres.")
+        
+        if favoriteGenres.isEmpty {
+            print("As far as music goes, I'm not picky.")
+        } else {
+            print("I have particular music preferences.") //I have particular music preferences.
+        }
+        
+        favoriteGenres.insert("Jazz") // 第四个元素
+        if let removedGenre = favoriteGenres.remove("Rock") {
+            print("\(removedGenre)? I'm over it.") // Rock? I'mt over it.
+        } else {
+            print("I never much cared for that.")
+        }
+        
+        if favoriteGenres.contains("Funk") {
+            print("I get up on the good foot.")
+        } else {
+            print("It's too funky in there.") // It's too funky in there.
+        }
+        
+        for genre in favoriteGenres {
+            print("\(genre)")
+        }
+        
+        let oddDigits: Set = [1,3,5,7,9]
+        let evenDigits: Set = [0,2,4,6,8]
+        let singleDigitPrimeNumbers: Set = [2,3,5,7]
+        print(oddDigits.union(evenDigits).sorted()) // 并集 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+        print(oddDigits.intersection(evenDigits).sorted()) // 交集 []
+        print(oddDigits.subtracting(singleDigitPrimeNumbers).sorted()) // 补集 [1, 9]
+        print(oddDigits.symmetricDifference(singleDigitPrimeNumbers).sorted()) // 对称差分 [1, 2, 9]
+        
+        let houseAnimals: Set = ["🐶", "🐱"]
+        let farmAnimals: Set = ["🐮", "🐔", "🐑", "🐶", "🐱"]
+        let cityAnimals: Set = ["🐦", "🐭"]
+
+        print(houseAnimals.isSubset(of: farmAnimals)) // true
+        print(farmAnimals.isSuperset(of: houseAnimals)) // true
+        print(farmAnimals.isDisjoint(with: cityAnimals)) // true
     }
     sets()
+    
+    // Dictionary/字典
+    // https://swiftgg.gitbook.io/swift/swift-jiao-cheng/04_collection_types#dictionaries
+    func dicts() {
+        var namesOfIntegers: [Int: String] = [:]
+        // namesOfIntegers 是一个空的 [Int: String] 字典
+        
+        namesOfIntegers[16] = "sixteen"
+        // namesOfIntegers 现在包含一个键值对
+        print(namesOfIntegers) // [16: "sixteen"]
+        namesOfIntegers = [:]
+        // namesOfIntegers 又成为了一个 [Int: String] 类型的空字典
+        
+        var airports: [String: String] = ["YYZ": "Toronto Pearson", "DUB": "Dublin"] // ["DUB": "Dublin", "YYZ": "Toronto Pearson"]
+        // var airports = ["YYZ": "Toronto Pearson", "DUB": "Dublin"] 简易写法
+        print(airports)
+        
+        print("The dictionary of airports contains \(airports.count) items.") // The dictionary of airports contains 2 items.
+        airports["LHR"] = "London"
+        print(airports) // ["YYZ": "Toronto Pearson", "LHR": "London", "DUB": "Dublin"]
+        
+        if let oldValue = airports.updateValue("Dublin Airport", forKey: "DUB") {
+            print("The old value for DUB was \(oldValue)") // The old value for DUB was Dublin
+        }
+        
+        if let airportName = airports["DUB"] {
+            print("The name of the airport is \(airportName).") // The name of the airport is Dublin Airport.
+        } else {
+            print("The airport is not in the airports dictionary.")
+        }
+        
+        airports["APL"] = "Apple Internation"
+        print(airports) // ["YYZ": "Toronto Pearson", "DUB": "Dublin Airport", "APL": "Apple Internation", "LHR": "London"]
+        airports["APL"] = nil // 移除APL
+        print(airports) // ["DUB": "Dublin Airport", "YYZ": "Toronto Pearson", "LHR": "London"]
+        
+        if let removedValue = airports.removeValue(forKey: "DUB") {
+            print("The removed airport's name is \(removedValue).")
+        } else {
+            print("The airports dictionary does not contain a value for DUB.")
+        }
+        
+        for (airportCode, airportName) in airports {
+            print("\(airportCode): \(airportName)")
+        }
+        // YYZ: Toronto Pearson
+        // LHR: London Heathrow
+        
+        for airportCode in airports.keys {
+            print("Airport code: \(airportCode)")
+        }
+        // Airport code: YYZ
+        // Airport code: LHR
+
+        for airportName in airports.values {
+            print("Airport name: \(airportName)")
+        }
+        // Airport name: Toronto Pearson
+        // Airport name: London Heathrow
+        
+        let airportCodes = airports.keys
+        // 文档写法let airportCodes = [String](airports.keys)，但是不写[String]貌似也行？
+        print(airportCodes) // ["LHR", "YYZ"]
+        
+        let airportNames = airports.values
+        print(airportNames)
+    }
+    dicts()
 }

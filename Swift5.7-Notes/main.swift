@@ -26,3 +26,7 @@ stringsAndCharacters()
 // CollectionTypes/集合类型
 // https://swiftgg.gitbook.io/swift/swift-jiao-cheng/04_collection_types
 collectionTypes()
+
+// Control Flow/集合类型
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/05_control_flow
+controlFlow()
