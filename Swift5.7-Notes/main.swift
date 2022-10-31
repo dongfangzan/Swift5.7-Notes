@@ -30,3 +30,11 @@ collectionTypes()
 // Control Flow/集合类型
 // https://swiftgg.gitbook.io/swift/swift-jiao-cheng/05_control_flow
 controlFlow()
+
+// Functions/函数
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/06_functions
+functions()
+
+// Closures/闭包
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/07_closures
+closures()
