@@ -13,6 +13,7 @@
 		D9A9FB64290F48410040A666 /* ControlFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A9FB63290F48410040A666 /* ControlFlow.swift */; };
 		D9A9FB66290F497A0040A666 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A9FB65290F497A0040A666 /* Functions.swift */; };
 		D9A9FB68290F6D620040A666 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A9FB67290F6D620040A666 /* Closures.swift */; };
+		D9A9FB6A290F7B0B0040A666 /* Enumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A9FB69290F7B0B0040A666 /* Enumerations.swift */; };
 		D9E274672903EA91003D6224 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E274662903EA91003D6224 /* main.swift */; };
 		D9E274742903EAAF003D6224 /* A Swift Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E274712903EAAE003D6224 /* A Swift Tour.swift */; };
 		D9E274762906500D003D6224 /* TheBasics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E274752906500D003D6224 /* TheBasics.swift */; };
@@ -37,6 +38,7 @@
 		D9A9FB63290F48410040A666 /* ControlFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlFlow.swift; sourceTree = "<group>"; };
 		D9A9FB65290F497A0040A666 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		D9A9FB67290F6D620040A666 /* Closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
+		D9A9FB69290F7B0B0040A666 /* Enumerations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumerations.swift; sourceTree = "<group>"; };
 		D9E274632903EA90003D6224 /* Swift5.7-Notes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Swift5.7-Notes"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9E274662903EA91003D6224 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D9E2746F2903EAAE003D6224 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				D9A9FB63290F48410040A666 /* ControlFlow.swift */,
 				D9A9FB65290F497A0040A666 /* Functions.swift */,
 				D9A9FB67290F6D620040A666 /* Closures.swift */,
+				D9A9FB69290F7B0B0040A666 /* Enumerations.swift */,
 			);
 			path = "2. Language Guild(Swift教程)";
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				D9A9FB5E290BDEEB0040A666 /* BasicOperators.swift in Sources */,
 				D9E274672903EA91003D6224 /* main.swift in Sources */,
 				D9A9FB68290F6D620040A666 /* Closures.swift in Sources */,
+				D9A9FB6A290F7B0B0040A666 /* Enumerations.swift in Sources */,
 				D9E274762906500D003D6224 /* TheBasics.swift in Sources */,
 				D9A9FB66290F497A0040A666 /* Functions.swift in Sources */,
 				D9A9FB62290D2DC60040A666 /* CollectionTypes.swift in Sources */,

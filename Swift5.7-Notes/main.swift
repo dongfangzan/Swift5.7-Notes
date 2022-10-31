@@ -38,3 +38,7 @@ functions()
 // Closures/闭包
 // https://swiftgg.gitbook.io/swift/swift-jiao-cheng/07_closures
 closures()
+
+// Enumerations/枚举
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/08_enumerations
+enumerations()

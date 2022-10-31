@@ -18,7 +18,7 @@
   - [X] [Control Flow/控制流](https://github.com/dongfangzan/Swift5.7-Notes/blob/main/Swift5.7-Notes/2.%20Language%20Guild(Swift%E6%95%99%E7%A8%8B)/ControlFlow.swift)
   - [X] [Functions/函数](https://github.com/dongfangzan/Swift5.7-Notes/blob/main/Swift5.7-Notes/2.%20Language%20Guild(Swift%E6%95%99%E7%A8%8B)/Functions.swift)
   - [X] [Closures/闭包](https://github.com/dongfangzan/Swift5.7-Notes/blob/main/Swift5.7-Notes/2.%20Language%20Guild(Swift%E6%95%99%E7%A8%8B)/Closures.swift)
-  - [ ] [Enumerations/枚举]()
+  - [X] [Enumerations/枚举](https://github.com/dongfangzan/Swift5.7-Notes/blob/main/Swift5.7-Notes/2.%20Language%20Guild(Swift%E6%95%99%E7%A8%8B)/Enumerations.swift)
   - [ ] [Structures and Classes/类和结构体]()
   - [ ] [Properties/属性]()
   - [ ] [Methods/方法]()
