@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D95C3B3D2910BE62008C312E /* StructuresAndClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95C3B3C2910BE62008C312E /* StructuresAndClasses.swift */; };
 		D9A9FB5E290BDEEB0040A666 /* BasicOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A9FB5D290BDEEB0040A666 /* BasicOperators.swift */; };
 		D9A9FB60290BE8400040A666 /* StringsAndCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A9FB5F290BE8400040A666 /* StringsAndCharacters.swift */; };
 		D9A9FB62290D2DC60040A666 /* CollectionTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A9FB61290D2DC60040A666 /* CollectionTypes.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D95C3B3C2910BE62008C312E /* StructuresAndClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructuresAndClasses.swift; sourceTree = "<group>"; };
 		D9A9FB5D290BDEEB0040A666 /* BasicOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicOperators.swift; sourceTree = "<group>"; };
 		D9A9FB5F290BE8400040A666 /* StringsAndCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsAndCharacters.swift; sourceTree = "<group>"; };
 		D9A9FB61290D2DC60040A666 /* CollectionTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTypes.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				D9A9FB65290F497A0040A666 /* Functions.swift */,
 				D9A9FB67290F6D620040A666 /* Closures.swift */,
 				D9A9FB69290F7B0B0040A666 /* Enumerations.swift */,
+				D95C3B3C2910BE62008C312E /* StructuresAndClasses.swift */,
 			);
 			path = "2. Language Guild(Swift教程)";
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			files = (
 				D9A9FB5E290BDEEB0040A666 /* BasicOperators.swift in Sources */,
 				D9E274672903EA91003D6224 /* main.swift in Sources */,
+				D95C3B3D2910BE62008C312E /* StructuresAndClasses.swift in Sources */,
 				D9A9FB68290F6D620040A666 /* Closures.swift in Sources */,
 				D9A9FB6A290F7B0B0040A666 /* Enumerations.swift in Sources */,
 				D9E274762906500D003D6224 /* TheBasics.swift in Sources */,

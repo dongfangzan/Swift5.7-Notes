@@ -42,3 +42,7 @@ closures()
 // Enumerations/枚举
 // https://swiftgg.gitbook.io/swift/swift-jiao-cheng/08_enumerations
 enumerations()
+
+// Structures and Classes/类和结构体
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/09_structures_and_classes
+structuresAndClasses()
