@@ -57,6 +57,10 @@ properties()
 // https://swiftgg.gitbook.io/swift/swift-jiao-cheng/11_methods
 methods()
 
-// 2.12 Subscripts/下表
+// 2.12 Subscripts/下标
 // https://swiftgg.gitbook.io/swift/swift-jiao-cheng/12_subscripts
 subscripts()
+
+// 2.13 Inheritance/继承
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/13_inheritance
+inheritance()
