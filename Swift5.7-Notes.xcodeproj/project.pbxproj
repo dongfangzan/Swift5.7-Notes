@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		D95C3B3D2910BE62008C312E /* StructuresAndClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95C3B3C2910BE62008C312E /* StructuresAndClasses.swift */; };
+		D95C3B3F2910C27C008C312E /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95C3B3E2910C27C008C312E /* Properties.swift */; };
+		D95C3B412910F7F5008C312E /* Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95C3B402910F7F5008C312E /* Methods.swift */; };
+		D95C3B4329120871008C312E /* Subscripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95C3B4229120871008C312E /* Subscripts.swift */; };
 		D9A9FB5E290BDEEB0040A666 /* BasicOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A9FB5D290BDEEB0040A666 /* BasicOperators.swift */; };
 		D9A9FB60290BE8400040A666 /* StringsAndCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A9FB5F290BE8400040A666 /* StringsAndCharacters.swift */; };
 		D9A9FB62290D2DC60040A666 /* CollectionTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A9FB61290D2DC60040A666 /* CollectionTypes.swift */; };
@@ -34,6 +37,9 @@
 
 /* Begin PBXFileReference section */
 		D95C3B3C2910BE62008C312E /* StructuresAndClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructuresAndClasses.swift; sourceTree = "<group>"; };
+		D95C3B3E2910C27C008C312E /* Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
+		D95C3B402910F7F5008C312E /* Methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Methods.swift; sourceTree = "<group>"; };
+		D95C3B4229120871008C312E /* Subscripts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscripts.swift; sourceTree = "<group>"; };
 		D9A9FB5D290BDEEB0040A666 /* BasicOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicOperators.swift; sourceTree = "<group>"; };
 		D9A9FB5F290BE8400040A666 /* StringsAndCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsAndCharacters.swift; sourceTree = "<group>"; };
 		D9A9FB61290D2DC60040A666 /* CollectionTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTypes.swift; sourceTree = "<group>"; };
@@ -114,6 +120,9 @@
 				D9A9FB67290F6D620040A666 /* Closures.swift */,
 				D9A9FB69290F7B0B0040A666 /* Enumerations.swift */,
 				D95C3B3C2910BE62008C312E /* StructuresAndClasses.swift */,
+				D95C3B3E2910C27C008C312E /* Properties.swift */,
+				D95C3B402910F7F5008C312E /* Methods.swift */,
+				D95C3B4229120871008C312E /* Subscripts.swift */,
 			);
 			path = "2. Language Guild(Swift教程)";
 			sourceTree = "<group>";
@@ -176,6 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D95C3B3F2910C27C008C312E /* Properties.swift in Sources */,
 				D9A9FB5E290BDEEB0040A666 /* BasicOperators.swift in Sources */,
 				D9E274672903EA91003D6224 /* main.swift in Sources */,
 				D95C3B3D2910BE62008C312E /* StructuresAndClasses.swift in Sources */,
@@ -184,8 +194,10 @@
 				D9E274762906500D003D6224 /* TheBasics.swift in Sources */,
 				D9A9FB66290F497A0040A666 /* Functions.swift in Sources */,
 				D9A9FB62290D2DC60040A666 /* CollectionTypes.swift in Sources */,
+				D95C3B4329120871008C312E /* Subscripts.swift in Sources */,
 				D9A9FB60290BE8400040A666 /* StringsAndCharacters.swift in Sources */,
 				D9E274742903EAAF003D6224 /* A Swift Tour.swift in Sources */,
+				D95C3B412910F7F5008C312E /* Methods.swift in Sources */,
 				D9A9FB64290F48410040A666 /* ControlFlow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
