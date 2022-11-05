@@ -12,6 +12,9 @@
 		D95C3B412910F7F5008C312E /* Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95C3B402910F7F5008C312E /* Methods.swift */; };
 		D95C3B4329120871008C312E /* Subscripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95C3B4229120871008C312E /* Subscripts.swift */; };
 		D95C3B4529121319008C312E /* Inheritance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95C3B4429121319008C312E /* Inheritance.swift */; };
+		D95C3B47291217EA008C312E /* Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95C3B46291217EA008C312E /* Initialization.swift */; };
+		D98A350E29161B37004EFCB1 /* Deinitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98A350D29161B37004EFCB1 /* Deinitialization.swift */; };
+		D98A351029161D8F004EFCB1 /* OptionalChaining.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98A350F29161D8F004EFCB1 /* OptionalChaining.swift */; };
 		D9A9FB5E290BDEEB0040A666 /* BasicOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A9FB5D290BDEEB0040A666 /* BasicOperators.swift */; };
 		D9A9FB60290BE8400040A666 /* StringsAndCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A9FB5F290BE8400040A666 /* StringsAndCharacters.swift */; };
 		D9A9FB62290D2DC60040A666 /* CollectionTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A9FB61290D2DC60040A666 /* CollectionTypes.swift */; };
@@ -42,6 +45,9 @@
 		D95C3B402910F7F5008C312E /* Methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Methods.swift; sourceTree = "<group>"; };
 		D95C3B4229120871008C312E /* Subscripts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscripts.swift; sourceTree = "<group>"; };
 		D95C3B4429121319008C312E /* Inheritance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inheritance.swift; sourceTree = "<group>"; };
+		D95C3B46291217EA008C312E /* Initialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Initialization.swift; sourceTree = "<group>"; };
+		D98A350D29161B37004EFCB1 /* Deinitialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deinitialization.swift; sourceTree = "<group>"; };
+		D98A350F29161D8F004EFCB1 /* OptionalChaining.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalChaining.swift; sourceTree = "<group>"; };
 		D9A9FB5D290BDEEB0040A666 /* BasicOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicOperators.swift; sourceTree = "<group>"; };
 		D9A9FB5F290BE8400040A666 /* StringsAndCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsAndCharacters.swift; sourceTree = "<group>"; };
 		D9A9FB61290D2DC60040A666 /* CollectionTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTypes.swift; sourceTree = "<group>"; };
@@ -126,6 +132,9 @@
 				D95C3B402910F7F5008C312E /* Methods.swift */,
 				D95C3B4229120871008C312E /* Subscripts.swift */,
 				D95C3B4429121319008C312E /* Inheritance.swift */,
+				D95C3B46291217EA008C312E /* Initialization.swift */,
+				D98A350D29161B37004EFCB1 /* Deinitialization.swift */,
+				D98A350F29161D8F004EFCB1 /* OptionalChaining.swift */,
 			);
 			path = "2. Language Guild(Swift教程)";
 			sourceTree = "<group>";
@@ -195,7 +204,10 @@
 				D95C3B3D2910BE62008C312E /* StructuresAndClasses.swift in Sources */,
 				D9A9FB68290F6D620040A666 /* Closures.swift in Sources */,
 				D9A9FB6A290F7B0B0040A666 /* Enumerations.swift in Sources */,
+				D95C3B47291217EA008C312E /* Initialization.swift in Sources */,
 				D9E274762906500D003D6224 /* TheBasics.swift in Sources */,
+				D98A350E29161B37004EFCB1 /* Deinitialization.swift in Sources */,
+				D98A351029161D8F004EFCB1 /* OptionalChaining.swift in Sources */,
 				D9A9FB66290F497A0040A666 /* Functions.swift in Sources */,
 				D9A9FB62290D2DC60040A666 /* CollectionTypes.swift in Sources */,
 				D95C3B4329120871008C312E /* Subscripts.swift in Sources */,

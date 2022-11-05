@@ -64,3 +64,15 @@ subscripts()
 // 2.13 Inheritance/继承
 // https://swiftgg.gitbook.io/swift/swift-jiao-cheng/13_inheritance
 inheritance()
+
+// 2.14 Initialization/构造过程
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/14_initialization
+initialization()
+
+// 2.15 DeInitialization/析构过程
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/15_deinitialization
+deinitialization()
+
+// 2.17 Optional Chaining/可选链
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/16_optional_chaining
+optionalChaining()
