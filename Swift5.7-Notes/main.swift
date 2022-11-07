@@ -103,4 +103,4 @@ protocols()
 
 // 2.22 Generics/泛型
 // https://swiftgg.gitbook.io/swift/swift-jiao-cheng/22_generics
-generics()
+generics2()
