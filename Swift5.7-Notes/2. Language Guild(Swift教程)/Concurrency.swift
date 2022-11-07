@@ -8,6 +8,6 @@
 import Foundation
 
 // 官方教程中的swift 并发实在没说点啥有用的，改为找其他教材
-func concurrency() {
+func concurrency2() {
     
 }

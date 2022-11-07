@@ -73,10 +73,34 @@ initialization()
 // https://swiftgg.gitbook.io/swift/swift-jiao-cheng/15_deinitialization
 deinitialization()
 
-// 2.17 Optional Chaining/可选链
+// 2.16 Optional Chaining/可选链
 // https://swiftgg.gitbook.io/swift/swift-jiao-cheng/16_optional_chaining
 optionalChaining()
 
-// 2.18 Error Handling/错误处理
+// 2.17 Error Handling/错误处理
 // https://swiftgg.gitbook.io/swift/swift-jiao-cheng/17_error_handling
 errorHandling2()
+
+// 2.28 Concurrency/并发
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/28_concurrency
+concurrency2()
+
+// 2.18 Type Casting/类型转换
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/18_type_casting
+typeCasting()
+
+// 2.19 Nested Types/嵌套类型
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/19_nested_types
+nestedTypes()
+
+// 2.20 Extensions/扩展
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/20_extensions
+extensions()
+
+// 2.21 Protocols/协议
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/21_protocols
+protocols()
+
+// 2.22 Generics/泛型
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/22_generics
+generics()
