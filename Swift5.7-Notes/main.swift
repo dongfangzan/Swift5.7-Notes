@@ -76,3 +76,7 @@ deinitialization()
 // 2.17 Optional Chaining/可选链
 // https://swiftgg.gitbook.io/swift/swift-jiao-cheng/16_optional_chaining
 optionalChaining()
+
+// 2.18 Error Handling/错误处理
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/17_error_handling
+errorHandling2()
